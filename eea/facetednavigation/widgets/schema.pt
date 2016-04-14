@@ -33,7 +33,7 @@
         widget python:field.widget">
         <h1 tal:content="field_id"></h1>
         <h2 tal:content="faceted_widget"></h2>
-        <!-- <div metal:use-macro="python:faceted_widget.get_macro(field_id, 'edit')" /> -->
+        <div metal:use-macro="python:faceted_widget.get_macro(field_id, 'edit')" />
       </tal:widget>
     </tal:field>
   </div>
