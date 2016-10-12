@@ -1,8 +1,8 @@
 Changelog
 =========
 
-10.0.dev0 - (unreleased)
-------------------------
+10.0rc1 - (2016-10-12)
+----------------------
 * Feature: make boolean index work well with radio widget.
   [cedricmessiant]
 * Bug fix: fix faceted count when _seq is a list of tuple values instead
