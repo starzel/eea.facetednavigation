@@ -4,6 +4,8 @@ import re
 import logging
 import operator
 from zope import interface
+
+from collective.solr.exceptions import SolrConnectionException
 from zope.component import queryMultiAdapter
 from zope.i18n import translate
 from zope.i18nmessageid.message import Message
@@ -323,7 +325,7 @@ class Widget(ATWidget):
                             'facet_fields'][index].keys()
                     except (AttributeError, KeyError):
                         pass
-            except ImportError:
+            except (ImportError, SolrConnectionException):
                 pass
             if not values:
                 values = self.catalog_vocabulary()
